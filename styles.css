@@ -18,7 +18,7 @@ h1, h3 {
 }
 
 /* Set the text color and font for paragraphs */
-p { 
+p, ul, li{ 
   color: white;
   font-family: "consolas", monospace;
 }
@@ -60,6 +60,24 @@ img {
   max-width: 600px;
   margin: 20px auto;
   text-align: center;
+}
+
+#box1 ul {
+  text-align: left;       /* Aligns the text to the left */
+  display: inline-block;  /* Keeps the list container centered inside the box */
+  padding-left: 20px;     /* Ensures adequate space for the bullets */
+}
+
+#box1 li a {
+  color: white;
+  text-decoration: none; /* Removes default underline */
+  cursor: pointer;       /* Forces the pointer/hand cursor */
+  transition: color 0.2s ease, text-decoration 0.2s ease; /* Smooth hover effect */
+}
+
+#box1 li a:hover {
+  color: #a0a0a0;              /* Changes color on hover (adjust this hex code to match your theme) */
+  text-decoration: underline;  /* Adds an underline on hover */
 }
 
 /* Style for the navigation button group */
